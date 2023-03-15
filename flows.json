@@ -1,0 +1,2573 @@
+[
+    {
+        "id": "91cbc36d0881acb2",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "acf4f6d61371256e",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a7057ebd6be3ac8b",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c57426345ebbf1ea",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7126bb814a444bb1",
+        "type": "tab",
+        "label": "essais",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "f63cfb6e30a79501",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7f578cf97e6eb3af",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.0.10",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "2",
+        "cycletime": "500",
+        "timeout": "2000",
+        "name": "Outdoor_PLC",
+        "vartable": [
+            {
+                "addr": "DB51,S0.22",
+                "name": "serials"
+            },
+            {
+                "addr": "DB51,S24.22",
+                "name": "SeriNo"
+            },
+            {
+                "addr": "DB51,S48.50",
+                "name": "ModelNo"
+            },
+            {
+                "addr": "DB51,S100.10",
+                "name": "PlanKodu"
+            },
+            {
+                "addr": "DB51,INT112",
+                "name": "Planlanan"
+            },
+            {
+                "addr": "DB51,INT114",
+                "name": "Okutulan"
+            },
+            {
+                "addr": "DB51,INT116",
+                "name": "Kalan"
+            },
+            {
+                "addr": "DB51,S118.10",
+                "name": "Sorgu1"
+            },
+            {
+                "addr": "DB51,S130.10",
+                "name": "Sorgu2"
+            },
+            {
+                "addr": "DB51,S178.150",
+                "name": "Mesaj"
+            }
+        ]
+    },
+    {
+        "id": "e58e3158c1dab7c9",
+        "type": "ui_group",
+        "name": "Home",
+        "tab": "8c6e55d5c93f9fe5",
+        "order": 1,
+        "disp": false,
+        "width": 30,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8c6e55d5c93f9fe5",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "542fa12cde9f769a",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#808080",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "Lucida Sans Unicode,Lucida Grande,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#808080",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#808080",
+                    "value": "#808080",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#808080",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#808080",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#a6a6a6",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#808080",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#808080",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#808080",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#808080",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "a73c0688.26bac8",
+        "type": "ui_group",
+        "name": "Bits",
+        "tab": "207e613d.22c52e",
+        "order": 4,
+        "disp": false,
+        "width": "25",
+        "collapse": false
+    },
+    {
+        "id": "207e613d.22c52e",
+        "type": "ui_tab",
+        "name": "Configuration",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d6060f19.2b834",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "93443fe0.36117",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "93443fe0.36117",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a25e33e091713e8d",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 1,
+        "width": 30,
+        "height": 1
+    },
+    {
+        "id": "b64ba1cdfcf7a1b6",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 2,
+        "width": 30,
+        "height": 1
+    },
+    {
+        "id": "879161cf99b28414",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 3,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "838524e002180791",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 5,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "b1edc76794af8faa",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 6,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "80edf9185a0812d4",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 7,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "8cb1146adac14347",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 8,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "f67fe307a7cb9040",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 9,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "264356ad1e47fdaf",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 10,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "3c1a14fdcd46f39b",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 12,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "bfabaf4bed91858f",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 14,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "1137104c7be3669d",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 16,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "bc7be4a6152a2ec5",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 17,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "a31d41071598379f",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 20,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "499d7ce092411220",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 21,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "0af57ef6dda60bba",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 22,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "799113a380115baa",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 23,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "cc2e0251510abbfa",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 24,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "cbc08aa55504f77b",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 25,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "7c08de180e045a47",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 28,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "6133cd389f1c84b2",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 29,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "26b05b3c6f4f554e",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 30,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "fbf01cbff5aeb0ce",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 31,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "d50de2c1a7506355",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 32,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "5f94e27bfe340388",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 33,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "e26649bcee3ba892",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 35,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "6498f98e2be755bf",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 36,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "5b385b7aff841d0b",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 37,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "863139b11bd3a212",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 38,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "7132c15d11e8a482",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 42,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "f448ae1a955e83ce",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 43,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "2dda151ac1c479cc",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 45,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "a78a4e86a40282e7",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 46,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "e56dd14f37908116",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 51,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "41b90391b8700231",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 52,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "f6f5814ee2cb3882",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 53,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "649a47cf93bc5936",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 54,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "0d0be1f97c844c0a",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 55,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "ee1dc9fd9e39d7f0",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 56,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "5c24f7f594dabdeb",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 58,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "494a49cd3f865138",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 59,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "dabaecfe34faed6c",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 60,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "5f8aeeedca47c810",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 61,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "1587b6167442cc67",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 62,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "07971ea6fc6f5558",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 63,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "f25da768b18daa69",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 64,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "ae7d3a9fa5c448d1",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 65,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "3257e6e0d8e95596",
+        "type": "ui_spacer",
+        "z": "acf4f6d61371256e",
+        "name": "spacer",
+        "group": "e58e3158c1dab7c9",
+        "order": 66,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "1e71bd83e68fdf5f",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "8c6e55d5c93f9fe5",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "dacbaa0317eb01cb",
+        "type": "ui_group",
+        "name": "Group 3",
+        "tab": "8c6e55d5c93f9fe5",
+        "order": 3,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "9025c4e0e41028f7",
+        "type": "s7 in",
+        "z": "acf4f6d61371256e",
+        "endpoint": "7f578cf97e6eb3af",
+        "mode": "single",
+        "variable": "serials",
+        "diff": true,
+        "name": "SeriNo",
+        "x": 150,
+        "y": 220,
+        "wires": [
+            [
+                "4cb4a734a84b882d"
+            ]
+        ]
+    },
+    {
+        "id": "67bc3113318c37b5",
+        "type": "http request",
+        "z": "acf4f6d61371256e",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 590,
+        "y": 280,
+        "wires": [
+            [
+                "d6dd51187da5e46c"
+            ]
+        ]
+    },
+    {
+        "id": "4cb4a734a84b882d",
+        "type": "function",
+        "z": "acf4f6d61371256e",
+        "name": "Convert_JsonFormat",
+        "func": "msg.payload = {\"serials\": msg.payload} ;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 220,
+        "wires": [
+            [
+                "67bc3113318c37b5",
+                "396ba5cb1124b606",
+                "c67fcc4162943a1c",
+                "e0ccfea77d8e41d9",
+                "8edee9c89c62277f",
+                "962768b612c24de8",
+                "7d5dd949f1ada9a2",
+                "dbb622acd5d06752",
+                "de547cc0f9839c7c"
+            ]
+        ]
+    },
+    {
+        "id": "d6dd51187da5e46c",
+        "type": "s7 out",
+        "z": "acf4f6d61371256e",
+        "endpoint": "7f578cf97e6eb3af",
+        "variable": "ModelNo",
+        "name": "ModelNo",
+        "x": 840,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "9aa3ef74a10bb4a8",
+        "type": "s7 out",
+        "z": "acf4f6d61371256e",
+        "endpoint": "7f578cf97e6eb3af",
+        "variable": "PlanKodu",
+        "name": "PlanKodu",
+        "x": 840,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "dc894ed46c98589e",
+        "type": "s7 out",
+        "z": "acf4f6d61371256e",
+        "endpoint": "7f578cf97e6eb3af",
+        "variable": "Planlanan",
+        "name": "Planlanan",
+        "x": 840,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "700c64e2a4f1f1ae",
+        "type": "s7 out",
+        "z": "acf4f6d61371256e",
+        "endpoint": "7f578cf97e6eb3af",
+        "variable": "Okutulan",
+        "name": "Okutulan",
+        "x": 840,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "7ccebe415c2cc74f",
+        "type": "s7 out",
+        "z": "acf4f6d61371256e",
+        "endpoint": "7f578cf97e6eb3af",
+        "variable": "Kalan",
+        "name": "Kalan",
+        "x": 830,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "23558f6c6a1a6c54",
+        "type": "s7 out",
+        "z": "acf4f6d61371256e",
+        "endpoint": "7f578cf97e6eb3af",
+        "variable": "Sorgu1",
+        "name": "PlandaVarmı",
+        "x": 850,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "9eb2649cbf8fc7ca",
+        "type": "s7 out",
+        "z": "acf4f6d61371256e",
+        "endpoint": "7f578cf97e6eb3af",
+        "variable": "Sorgu2",
+        "name": "İstasyonGeçtimi",
+        "x": 860,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "5d6446e60b4a9bc2",
+        "type": "s7 out",
+        "z": "acf4f6d61371256e",
+        "endpoint": "7f578cf97e6eb3af",
+        "variable": "Mesaj",
+        "name": "Mesaj",
+        "x": 830,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "e0ed2b4268e18871",
+        "type": "ui_text",
+        "z": "acf4f6d61371256e",
+        "group": "e58e3158c1dab7c9",
+        "order": 44,
+        "width": 7,
+        "height": 1,
+        "name": "ModelNumarası",
+        "label": "Model No",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "deneme modelno",
+        "x": 860,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "cb982b754918348c",
+        "type": "s7 in",
+        "z": "acf4f6d61371256e",
+        "endpoint": "7f578cf97e6eb3af",
+        "mode": "single",
+        "variable": "ModelNo",
+        "diff": false,
+        "name": "ModelNo",
+        "x": 580,
+        "y": 880,
+        "wires": [
+            [
+                "e0ed2b4268e18871"
+            ]
+        ]
+    },
+    {
+        "id": "396ba5cb1124b606",
+        "type": "http request",
+        "z": "acf4f6d61371256e",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 590,
+        "y": 340,
+        "wires": [
+            [
+                "9aa3ef74a10bb4a8"
+            ]
+        ]
+    },
+    {
+        "id": "c67fcc4162943a1c",
+        "type": "http request",
+        "z": "acf4f6d61371256e",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 590,
+        "y": 400,
+        "wires": [
+            [
+                "dc894ed46c98589e"
+            ]
+        ]
+    },
+    {
+        "id": "e0ccfea77d8e41d9",
+        "type": "http request",
+        "z": "acf4f6d61371256e",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 590,
+        "y": 460,
+        "wires": [
+            [
+                "700c64e2a4f1f1ae"
+            ]
+        ]
+    },
+    {
+        "id": "8edee9c89c62277f",
+        "type": "http request",
+        "z": "acf4f6d61371256e",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 590,
+        "y": 520,
+        "wires": [
+            [
+                "7ccebe415c2cc74f"
+            ]
+        ]
+    },
+    {
+        "id": "962768b612c24de8",
+        "type": "http request",
+        "z": "acf4f6d61371256e",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 590,
+        "y": 580,
+        "wires": [
+            [
+                "23558f6c6a1a6c54"
+            ]
+        ]
+    },
+    {
+        "id": "7d5dd949f1ada9a2",
+        "type": "http request",
+        "z": "acf4f6d61371256e",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 590,
+        "y": 640,
+        "wires": [
+            [
+                "9eb2649cbf8fc7ca"
+            ]
+        ]
+    },
+    {
+        "id": "dbb622acd5d06752",
+        "type": "http request",
+        "z": "acf4f6d61371256e",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 590,
+        "y": 700,
+        "wires": [
+            [
+                "5d6446e60b4a9bc2"
+            ]
+        ]
+    },
+    {
+        "id": "88954921a1ef8442",
+        "type": "ui_text",
+        "z": "acf4f6d61371256e",
+        "group": "e58e3158c1dab7c9",
+        "order": 40,
+        "width": 6,
+        "height": 2,
+        "name": "PlanKodu",
+        "label": "PLAN KODU:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "deneme plankodu",
+        "x": 840,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "3525d609182b6636",
+        "type": "s7 in",
+        "z": "acf4f6d61371256e",
+        "endpoint": "7f578cf97e6eb3af",
+        "mode": "single",
+        "variable": "PlanKodu",
+        "diff": false,
+        "name": "PlanKodu",
+        "x": 580,
+        "y": 940,
+        "wires": [
+            [
+                "88954921a1ef8442"
+            ]
+        ]
+    },
+    {
+        "id": "5caa27e0a8bca708",
+        "type": "s7 in",
+        "z": "acf4f6d61371256e",
+        "endpoint": "7f578cf97e6eb3af",
+        "mode": "single",
+        "variable": "Planlanan",
+        "diff": true,
+        "name": "Planlanan",
+        "x": 580,
+        "y": 1000,
+        "wires": [
+            [
+                "53abf1a32190306d",
+                "f4967bb4b7951f83"
+            ]
+        ]
+    },
+    {
+        "id": "c476c21e518d51a7",
+        "type": "s7 in",
+        "z": "acf4f6d61371256e",
+        "endpoint": "7f578cf97e6eb3af",
+        "mode": "single",
+        "variable": "Okutulan",
+        "diff": false,
+        "name": "Okutulan",
+        "x": 580,
+        "y": 1060,
+        "wires": [
+            [
+                "1a258df402d580c5"
+            ]
+        ]
+    },
+    {
+        "id": "a336a249ebd89f80",
+        "type": "s7 in",
+        "z": "acf4f6d61371256e",
+        "endpoint": "7f578cf97e6eb3af",
+        "mode": "single",
+        "variable": "Kalan",
+        "diff": false,
+        "name": "Kalan",
+        "x": 570,
+        "y": 1120,
+        "wires": [
+            [
+                "1d0e7e8c8495f590"
+            ]
+        ]
+    },
+    {
+        "id": "156ded64330e168e",
+        "type": "ui_text",
+        "z": "acf4f6d61371256e",
+        "group": "e58e3158c1dab7c9",
+        "order": 19,
+        "width": 13,
+        "height": 3,
+        "name": "PlandaVarmı",
+        "label": "EVET",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "deneme plandavarmı",
+        "x": 850,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "f7395e47963be2b1",
+        "type": "s7 in",
+        "z": "acf4f6d61371256e",
+        "endpoint": "7f578cf97e6eb3af",
+        "mode": "single",
+        "variable": "Sorgu1",
+        "diff": false,
+        "name": "PlandaVarmı",
+        "x": 590,
+        "y": 1180,
+        "wires": [
+            [
+                "156ded64330e168e"
+            ]
+        ]
+    },
+    {
+        "id": "3221018835421e65",
+        "type": "ui_text",
+        "z": "acf4f6d61371256e",
+        "group": "e58e3158c1dab7c9",
+        "order": 27,
+        "width": 13,
+        "height": 3,
+        "name": "İstasyondanGeçtimi",
+        "label": "EVET",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "deneme istasyon",
+        "x": 870,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "22678a2f3fe8b390",
+        "type": "s7 in",
+        "z": "acf4f6d61371256e",
+        "endpoint": "7f578cf97e6eb3af",
+        "mode": "single",
+        "variable": "Sorgu2",
+        "diff": false,
+        "name": "İstasyondanGeçtimi",
+        "x": 610,
+        "y": 1240,
+        "wires": [
+            [
+                "3221018835421e65"
+            ]
+        ]
+    },
+    {
+        "id": "81bca2596f60d470",
+        "type": "ui_text",
+        "z": "acf4f6d61371256e",
+        "group": "e58e3158c1dab7c9",
+        "order": 50,
+        "width": 7,
+        "height": 3,
+        "name": "Bilgi",
+        "label": "Bilgi",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "deneme bilgi",
+        "x": 830,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "2760454bcc7d09a8",
+        "type": "s7 in",
+        "z": "acf4f6d61371256e",
+        "endpoint": "7f578cf97e6eb3af",
+        "mode": "single",
+        "variable": "Mesaj",
+        "diff": true,
+        "name": "Mesaj",
+        "x": 570,
+        "y": 1300,
+        "wires": [
+            [
+                "81bca2596f60d470"
+            ]
+        ]
+    },
+    {
+        "id": "de547cc0f9839c7c",
+        "type": "http request",
+        "z": "acf4f6d61371256e",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 590,
+        "y": 220,
+        "wires": [
+            [
+                "6b7d6b048ff3bb43"
+            ]
+        ]
+    },
+    {
+        "id": "6b7d6b048ff3bb43",
+        "type": "s7 out",
+        "z": "acf4f6d61371256e",
+        "endpoint": "7f578cf97e6eb3af",
+        "variable": "SeriNo",
+        "name": "SeriNo",
+        "x": 830,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "bda607f5abc20823",
+        "type": "ui_text",
+        "z": "acf4f6d61371256e",
+        "group": "e58e3158c1dab7c9",
+        "order": 41,
+        "width": 7,
+        "height": 1,
+        "name": "SeriNumarası",
+        "label": "Seri No",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "deneme serino",
+        "x": 840,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "aa2c62ec4898ac7a",
+        "type": "s7 in",
+        "z": "acf4f6d61371256e",
+        "endpoint": "7f578cf97e6eb3af",
+        "mode": "single",
+        "variable": "SeriNo",
+        "diff": false,
+        "name": "SeriNo",
+        "x": 570,
+        "y": 820,
+        "wires": [
+            [
+                "bda607f5abc20823",
+                "e00477a86154a614"
+            ]
+        ]
+    },
+    {
+        "id": "e8f4a2608d5893b6",
+        "type": "ui_table",
+        "z": "acf4f6d61371256e",
+        "group": "e58e3158c1dab7c9",
+        "name": "",
+        "order": 57,
+        "width": 26,
+        "height": 5,
+        "columns": [
+            {
+                "field": "SeriNo",
+                "title": "Seri Numarası",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "ModelNo",
+                "title": "Model Numarası",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Sorgu1",
+                "title": "Sorgu1",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Sorgu2",
+                "title": "Sorgu2",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Tarih",
+                "title": "Tarih",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Saat",
+                "title": "Saat",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 830,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "4a9148453ea141e2",
+        "type": "ui_text",
+        "z": "acf4f6d61371256e",
+        "group": "e58e3158c1dab7c9",
+        "order": 18,
+        "width": 13,
+        "height": 3,
+        "name": "",
+        "label": "Herhangi bir üretim planında var mı?",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "deneme plandavarmı",
+        "x": 1110,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "24b5d8abe65036f8",
+        "type": "ui_text",
+        "z": "acf4f6d61371256e",
+        "group": "e58e3158c1dab7c9",
+        "order": 26,
+        "width": 13,
+        "height": 3,
+        "name": "",
+        "label": "Mevcut istasyondan geçti mi?",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "deneme istasyon",
+        "x": 1130,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "cfcafdad4e918d12",
+        "type": "ui_gauge",
+        "z": "acf4f6d61371256e",
+        "name": "",
+        "group": "e58e3158c1dab7c9",
+        "order": 49,
+        "width": 6,
+        "height": 3,
+        "gtype": "gage",
+        "title": "PLANLANAN",
+        "label": " ADET",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "500",
+        "colors": [
+            "#0000ff",
+            "#0000ff",
+            "#0000ff"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "deneme planlanan",
+        "x": 930,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "1a258df402d580c5",
+        "type": "ui_gauge",
+        "z": "acf4f6d61371256e",
+        "name": "",
+        "group": "e58e3158c1dab7c9",
+        "order": 47,
+        "width": 6,
+        "height": 3,
+        "gtype": "gage",
+        "title": "OKUTULAN",
+        "label": "ADET",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "500",
+        "colors": [
+            "#ff0000",
+            "#ffff00",
+            "#00ff00"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "deneme okutulan",
+        "x": 930,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "1d0e7e8c8495f590",
+        "type": "ui_gauge",
+        "z": "acf4f6d61371256e",
+        "name": "",
+        "group": "e58e3158c1dab7c9",
+        "order": 48,
+        "width": 7,
+        "height": 3,
+        "gtype": "gage",
+        "title": "KALAN",
+        "label": "ADET",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "500",
+        "colors": [
+            "#00ff00",
+            "#ffff00",
+            "#ff0000"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "deneme kalan",
+        "x": 920,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "b4f9d49d0f628316",
+        "type": "ui_template",
+        "z": "acf4f6d61371256e",
+        "group": "e58e3158c1dab7c9",
+        "name": "Barkod",
+        "order": 39,
+        "width": 13,
+        "height": 2,
+        "format": "<style>\n    .bar\n    {\n        font-family: 'code 128';\n        font-size: 65px;\n        text-align: center;\n        line-height: 1.54;\n        font-weight: normal;\n        background-color: white;\n        color: black;\n    }\n</style>\n<div class = 'bar' ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 860,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a1c77bd19c6af661",
+        "type": "ui_text",
+        "z": "acf4f6d61371256e",
+        "group": "e58e3158c1dab7c9",
+        "order": 13,
+        "width": 6,
+        "height": 1,
+        "name": "Date",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 890,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "4c48ba70fb399653",
+        "type": "function",
+        "z": "acf4f6d61371256e",
+        "name": "Format Time",
+        "func": "const currenDate = new Date();\nconst options = {\n    weekday:'long',\n    year:'numeric',\n    month:'long',\n    localeMatcher:'lookup',\n    language:'tr-TR'\n};\nconst turkishDate = currenDate.toLocaleString('tr-TR',options);\nmsg.payload= turkishDate;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 1420,
+        "wires": [
+            [
+                "a1c77bd19c6af661"
+            ]
+        ]
+    },
+    {
+        "id": "7dad0c27ab9f4056",
+        "type": "trigger",
+        "z": "acf4f6d61371256e",
+        "name": "",
+        "op1": "true",
+        "op2": "0",
+        "op1type": "bool",
+        "op2type": "str",
+        "duration": "-1",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 500,
+        "y": 1420,
+        "wires": [
+            [
+                "4c48ba70fb399653",
+                "f77e4b42f23fef9b",
+                "8ca9ce466281c930"
+            ]
+        ]
+    },
+    {
+        "id": "15da56071c2160dd",
+        "type": "inject",
+        "z": "acf4f6d61371256e",
+        "name": "Startup",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 1420,
+        "wires": [
+            [
+                "7dad0c27ab9f4056"
+            ]
+        ]
+    },
+    {
+        "id": "437fb5a605dea3db",
+        "type": "ui_text",
+        "z": "acf4f6d61371256e",
+        "group": "e58e3158c1dab7c9",
+        "order": 11,
+        "width": 6,
+        "height": 1,
+        "name": "Time",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 890,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "f77e4b42f23fef9b",
+        "type": "function",
+        "z": "acf4f6d61371256e",
+        "name": "Format Time",
+        "func": "const currenDate = new Date();\nconst options = {\n    hour:'numeric',\n    minute: 'numeric',\n    second: 'numeric',\n    localeMatcher:'lookup',\n    language:'tr-TR'\n};\nconst turkishTime = currenDate.toLocaleString('tr-TR',options);\nmsg.payload= turkishTime;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 1480,
+        "wires": [
+            [
+                "437fb5a605dea3db"
+            ]
+        ]
+    },
+    {
+        "id": "abd7e4f094e3eb16",
+        "type": "ui_template",
+        "z": "acf4f6d61371256e",
+        "group": "e58e3158c1dab7c9",
+        "name": "Logo",
+        "order": 4,
+        "width": 18,
+        "height": 3,
+        "format": "<!DOCTYPE html>\n<img width = \"50%\" height = \"50%\" alt=\"Image not found\" src=\"data:image/png;base64,{{msg.payload}}\" class=\"deneme logo\"/>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "deneme  logo",
+        "x": 890,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "25d515e7b4f03486",
+        "type": "base64",
+        "z": "acf4f6d61371256e",
+        "name": "",
+        "action": "str",
+        "property": "payload",
+        "x": 700,
+        "y": 1560,
+        "wires": [
+            [
+                "abd7e4f094e3eb16"
+            ]
+        ]
+    },
+    {
+        "id": "8ca9ce466281c930",
+        "type": "file in",
+        "z": "acf4f6d61371256e",
+        "name": "logo",
+        "filename": "C:\\Users\\kaana\\Videos\\logo.png",
+        "filenameType": "str",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 490,
+        "y": 1560,
+        "wires": [
+            [
+                "25d515e7b4f03486"
+            ]
+        ]
+    },
+    {
+        "id": "888933f8a2328917",
+        "type": "ui_text",
+        "z": "acf4f6d61371256e",
+        "group": "e58e3158c1dab7c9",
+        "order": 15,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "OUTDOOR- HAT BAŞI V1.0.0.0",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "text",
+        "x": 1090,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "bfefaca8a0c1515b",
+        "type": "debug",
+        "z": "acf4f6d61371256e",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "e00477a86154a614",
+        "type": "function",
+        "z": "acf4f6d61371256e",
+        "name": "To Code 128",
+        "func": "var kod, checksum, t, value, checksumChar,result;\nkod = msg.payload.toString();\nchecksum = 104;\nfor (t=0; t<kod.length; t++)\n{\n    value = kod.charCodeAt(t) -32;\n    checksum = checksum + (value * (t+1));\n}\nchecksum = checksum % 103;\nchecksumChar = checksum + 32;\nif (checksumChar > 126)\n    {\n    checksumChar = checksumChar + 68;\n    }\nresult = String.fromCharCode(204);\nresult = result + kod + String.fromCharCode(checksumChar) + String.fromCharCode(206);\nmsg.payload = result;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 780,
+        "wires": [
+            [
+                "b4f9d49d0f628316"
+            ]
+        ]
+    },
+    {
+        "id": "53abf1a32190306d",
+        "type": "function",
+        "z": "acf4f6d61371256e",
+        "name": "Planlanan-max",
+        "func": "msg.ui_control = { min: 0, max: msg.payload }\nmsg.payload = 0\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 1040,
+        "wires": [
+            [
+                "1a258df402d580c5",
+                "1d0e7e8c8495f590"
+            ]
+        ]
+    },
+    {
+        "id": "f4967bb4b7951f83",
+        "type": "function",
+        "z": "acf4f6d61371256e",
+        "name": "Planlanan-max",
+        "func": "msg.ui_control = { min: 0, max: msg.payload }\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 1000,
+        "wires": [
+            [
+                "cfcafdad4e918d12"
+            ]
+        ]
+    },
+    {
+        "id": "b54732e8fd060319",
+        "type": "ui_template",
+        "z": "acf4f6d61371256e",
+        "group": "",
+        "name": "",
+        "order": 19,
+        "width": 3,
+        "height": 1,
+        "format": "<style>\n    .deneme{\n    font-weight: bold;\n    background-color: inherit;\n    //padding: 6px;\n   // width:100%;\n   // height:300px;\n    text-align: center;\n    //border:5px solid;\n    border-style: none;\n    text-color: black;\n    }\n    .deneme.serino{\n    background-color:black;\n    //border: 1px solid gray;\n    }\n    .deneme.modelno{\n    background-color:black;\n    }\n    .deneme.logo{\n       // border: 1px solid gray;\n        max-width: 100%;\n        height: 100%;\n        width: 100%;\n    }\n\n    .deneme.plankodu{\n    //background-color:#dae7ec;\n    background-color:black;\n    }\n    .deneme.plandavarmı{\n     background-color:black;\n    font-size: 22px;\n    text-align:left;\n    }\n\n    .deneme.istasyon {\n        background-color:black;\n    font-size: 22px;\n    text-align:left;\n    }\n\n    .deneme.title{\n        background-color:black;\n    text-align: center;\n        \n    }\n   \n    .deneme.planlanan{\n        background-color:black;\n        \n    \n    }\n    .deneme.okutulan{\n        background-color:black;\n    \n    }\n    .deneme.kalan{\n    background-color:black;\n    \n    }\n    .deneme.bilgi{\n        background-color:black;\n    \n    }\n    \n\n\n/*.deneme{\n//background-color: red;\n//text-color: green;\n//text-shadow: 4px 2px 4px #00000045;\n//box-shadow: 0 -1px 5px 1px #00000045;\n//border-radius: 6px;\n//border: 1px solid gray;\n//padding: 0px;\n//font-weight: normal;\n//font-size : 20px;\n//font-family: ariel;\n//text-align: center;\n}*/\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 1100,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1b92fc44c3486aa7",
+        "type": "ui_template",
+        "z": "acf4f6d61371256e",
+        "group": "e58e3158c1dab7c9",
+        "name": "Title",
+        "order": 34,
+        "width": 26,
+        "height": 2,
+        "format": "<center>\n<div class=\"deneme title\" >BARKOD BİLGİLERİ</div>\n</center>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "deneme title",
+        "x": 1070,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "470431d3ef1fbbc8",
+        "type": "ui_template",
+        "z": "a7057ebd6be3ac8b",
+        "group": "",
+        "name": "Dashboard stylesheet",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n/*\nIt is reasnoble to declare the colors as CSS variables\nso they can be easily called by name where needed.\n\nYou can see that in many places the variables are not used. Change it!\n*/\n/*\n:root {\n  --color-green-primary: rgb(51, 204, 51);\n  --color-green-secondary: rgb(26, 101, 26);\n  --color-red-primary: rgb(255, 0, 0);\n  --color-red-secondary: rgba(153,0,0,1);\n  --color-gray-primary:rgba(40,40,40,1);\n  --color-gray-secondary:rgba(65,65,65,1);\n  --color-text-primary: rgb(230, 226, 209);\n  --color-widget-border: rgb(84, 78, 78);\n}\n*/\n/*\nAll CSS adjustments are commented out.\nTurn rules on one by one and see the changes.\nDon't use too many elements cos it wil be confusing\nStart with simple elements like text, slider or button\n\nMany of elements like buttons have states, \nthose rules must be found and adjusted also.\n*/\n\n/*\n.masonry-container {\n    position: relative;\n    width: 100%;\n    height:100%;\n    margin: 0 auto;\n    background: rgb(255,0,0);\n    background: linear-gradient(180deg,  var(--color-gray-primary) 0%, var(--color-gray-secondary) 100%);\n}\n\n\n\n.nr-dashboard-cardcontainer {\n    position: relative;\n    box-shadow: inset 0px 1px 4px 0px #000000bb;\n    border-radius: 15px;\n}\n\n\n\n.nr-dashboard-theme ui-card-panel {\n    background-color: #33333300;\n    color:var(--color-text-primary);\n    border-radius: 12px;\n    box-shadow: 0 0 8px 0px #00000080;\n}\n\n/*\n.md-card ui-card-size {\nbackground-color: #33333300;\ncolor:var(--color-text-primary);\nborder-radius: 15px;\nbox-shadow: 0 0 8px 0px #00000080;\n}\n*/\n/*\nbody.nr-dashboard-theme md-content md-card {\n    background-color: #33333300;\n    color: var(--color-text-primary);\n    text-shadow: 4px 2px 4px #00000045;\n    box-shadow: 0 -1px 5px 1px #00000045;\n    border-radius: 12px;\n    border: 1px solid var(--color-widget-border);\n}\n\n\n\n\n.nr-dashboard-theme ui-card-panel p.nr-dashboard-cardtitle {\n    color: var(--color-text-primary);\n}\n\n\n\n\n.md-button {\n    display: inline-block;\n    position: relative;\n    cursor: pointer;\n    min-height: 36px;\n    min-width: 88px;\n    line-height: 36px;\n    vertical-align: middle;\n    align-items: center;\n    text-align: center;\n    border-radius: 12px;\n    box-sizing: border-box;\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none;\n    outline: none;\n    border: 0;\n    padding: 0 6px;\n    margin: 6px 8px;\n    background: transparent;\n    color:var(--color-text-primary);\n    white-space: nowrap;\n    text-transform: uppercase;\n    font-weight: 500;\n    font-size: 14px;\n    font-style: inherit;\n    font-variant: inherit;\n    font-family: inherit;\n    text-decoration: none;\n    overflow: hidden;\n    transition: box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);\n}\n\n\n\n\n.nr-dashboard-theme .nr-dashboard-button .md-button {\n    background-color: #88888800;\n    color:var(--color-text-primary);\n}\n\n\n.nr-dashboard-theme .nr-dashboard-button .md-button:hover {\n    background-color: #88888855;\n}\n\n\n\n\nmd-slider .md-thumb {\n    z-index: 1;\n    position: absolute;\n    left: -10px;\n    top: 14px;\n    width: 20px;\n    height: 20px;\n    border-radius: 20px;\n    -webkit-transform: scale(.7);\n    transform: scale(.7);\n    transition: all .4s cubic-bezier(.25,.8,.25,1);\n    box-shadow: 0 0 6px #00000070;\n}\n\n\n\n/*\nAdvanced stuff - dynamic change of card CSS\n\nClasses here can be used to make colored stripe at the top of card\nUsage is not in here, but they are added to md-card when needed within another template\n\n.carderr {\n    background: rgb(255,0,0);\n    background: linear-gradient(180deg, var(--color-red-primary) 0px, var(--color-red-secondary) 3px, rgba(80,80,80,1) 4px, rgba(45,45,45,1) 100%);\n}\n.cardok {\n    background: rgb(39,255,0);\n    background: linear-gradient(180deg, var(--color-green-primary) 0px, var(--color-green-secondary) 3px, rgba(70,70,70,1) 4px, rgba(40,40,40,1) 100%);\n}\n*/\n\n</style>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "global",
+        "className": "",
+        "x": 520,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ea9712ad9c0c493c",
+        "type": "ui_template",
+        "z": "a7057ebd6be3ac8b",
+        "group": "",
+        "name": "Clock Toolbar",
+        "order": 18,
+        "width": 8,
+        "height": 1,
+        "format": "<script id=\"titleScript\" type=\"text/javascript\">\n\n$(function() {\n    if($('.md-toolbar-tools').length != 0){\n        loadClock();\n    }else setTimeout(loadClock, 500)\n});\n\nfunction loadClock(){\n    $('#clock').remove();\n    var toolbar = $('.md-toolbar-tools');\n    \n    var div = $('<div/>');\n    var p = $('<p/ id=\"clock\">');\n    \n    div.append(p);\n    div[0].style.margin = '5px 5px 5px auto';\n    toolbar.append(div);\n\n    function displayTitle(lh) {\n        p.text(lh); \n    }\n    \n    function upTime() {\n        var d = new Date();\n        p.text(d.toLocaleString());\n    }\n\n    if(document.clockInterval){ \n            clearInterval(document.clockInterval);\n            document.clockInterval = null;\n    }\n        \n    document.clockInterval = setInterval(upTime,1000);\n}\n\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "global",
+        "className": "",
+        "x": 740,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "07702d7fbc16a9a1",
+        "type": "ui_template",
+        "z": "a7057ebd6be3ac8b",
+        "group": "",
+        "name": "",
+        "order": 19,
+        "width": 3,
+        "height": 1,
+        "format": "<style>\n    /*\n.deneme p {\n//background-color: #33333300;\ncolor: white;\n//text-shadow: 4px 2px 4px #00000045;\n//box-shadow: 0 -1px 5px 1px #00000045;\n//border-radius: 6px;\n//border: 1px solid gray;\n//padding: 0px;\nfont-weight: normal;\nfont-size : 20px;\nfont-family: times;\ntext-align: left;\n\n}\n*/\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 340,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2bc6b538d4107ddd",
+        "type": "ui_template",
+        "z": "a7057ebd6be3ac8b",
+        "group": "",
+        "name": "Dashboard style_text",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n/*\nIt is reasnoble to declare the colors as CSS variables\nso they can be easily called by name where needed.\n\nYou can see that in many places the variables are not used. Change it!\n*/\n/*\n:root {\n  --color-green-primary: rgb(51, 204, 51);\n  --color-green-secondary: rgb(26, 101, 26);\n  --color-red-primary: rgb(255, 0, 0);\n  --color-red-secondary: rgba(153,0,0,1);\n  --color-gray-primary:rgba(40,40,40,1);\n  --color-gray-secondary:rgba(65,65,65,1);\n  --color-text-primary: rgb(230, 226, 209);\n  --color-widget-border: rgb(84, 78, 78);\n}\n*/\n/*\nAll CSS adjustments are commented out.\nTurn rules on one by one and see the changes.\nDon't use too many elements cos it wil be confusing\nStart with simple elements like text, slider or button\n\nMany of elements like buttons have states, \nthose rules must be found and adjusted also.\n*/\n\n/*\n.masonry-container {\n    position: relative;\n    width: 100%;\n    height:100%;\n    margin: 0 auto;\n    background: rgb(255,0,0);\n    background: linear-gradient(180deg,  var(--color-gray-primary) 0%, var(--color-gray-secondary) 100%);\n}\n\n\n\n.nr-dashboard-cardcontainer {\n    position: relative;\n    box-shadow: inset 0px 1px 4px 0px #000000bb;\n    border-radius: 15px;\n}\n\n\n\n.nr-dashboard-theme ui-card-panel {\n    background-color: #33333300;\n    color:var(--color-text-primary);\n    border-radius: 12px;\n    box-shadow: 0 0 8px 0px #00000080;\n}\n\n/*\n.md-card ui-card-size {\nbackground-color: #33333300;\ncolor:var(--color-text-primary);\nborder-radius: 15px;\nbox-shadow: 0 0 8px 0px #00000080;\n}\n*/\n/*body.nr-dashboard-theme md-content md-card {\nbackground-color: #33333300;\ncolor: white;\n//text-shadow: 4px 2px 4px #00000045;\n//box-shadow: 0 -1px 5px 1px #00000045;\nborder-radius: 6px;\nborder: 1px solid gray;\npadding: 0px;\nfont-weight: normal;\nfont-size : 12px;\nfont-family: times;\ntext-align: center;\n}*/\n\n\n\n\n/*\n.nr-dashboard-theme ui-card-panel p.nr-dashboard-cardtitle {\n    color: var(--color-text-primary);\n}\n\n\n\n\n.md-button {\n    display: inline-block;\n    position: relative;\n    cursor: pointer;\n    min-height: 36px;\n    min-width: 88px;\n    line-height: 36px;\n    vertical-align: middle;\n    align-items: center;\n    text-align: center;\n    border-radius: 12px;\n    box-sizing: border-box;\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none;\n    outline: none;\n    border: 0;\n    padding: 0 6px;\n    margin: 6px 8px;\n    background: transparent;\n    color:var(--color-text-primary);\n    white-space: nowrap;\n    text-transform: uppercase;\n    font-weight: 500;\n    font-size: 14px;\n    font-style: inherit;\n    font-variant: inherit;\n    font-family: inherit;\n    text-decoration: none;\n    overflow: hidden;\n    transition: box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);\n}\n\n\n\n\n.nr-dashboard-theme .nr-dashboard-button .md-button {\n    background-color: #88888800;\n    color:var(--color-text-primary);\n}\n\n\n.nr-dashboard-theme .nr-dashboard-button .md-button:hover {\n    background-color: #88888855;\n}\n\n\n\n\nmd-slider .md-thumb {\n    z-index: 1;\n    position: absolute;\n    left: -10px;\n    top: 14px;\n    width: 20px;\n    height: 20px;\n    border-radius: 20px;\n    -webkit-transform: scale(.7);\n    transform: scale(.7);\n    transition: all .4s cubic-bezier(.25,.8,.25,1);\n    box-shadow: 0 0 6px #00000070;\n}\n\n\n\n/*\nAdvanced stuff - dynamic change of card CSS\n\nClasses here can be used to make colored stripe at the top of card\nUsage is not in here, but they are added to md-card when needed within another template\n\n.carderr {\n    background: rgb(255,0,0);\n    background: linear-gradient(180deg, var(--color-red-primary) 0px, var(--color-red-secondary) 3px, rgba(80,80,80,1) 4px, rgba(45,45,45,1) 100%);\n}\n.cardok {\n    background: rgb(39,255,0);\n    background: linear-gradient(180deg, var(--color-green-primary) 0px, var(--color-green-secondary) 3px, rgba(70,70,70,1) 4px, rgba(40,40,40,1) 100%);\n}\n*/\n\n</style>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "global",
+        "className": "",
+        "x": 520,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e33a26f7b4df05be",
+        "type": "ui_gauge",
+        "z": "c57426345ebbf1ea",
+        "name": "",
+        "group": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "{{topic}}",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 790,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "73c45de218847cc2",
+        "type": "inject",
+        "z": "c57426345ebbf1ea",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 377,
+        "y": 265,
+        "wires": [
+            [
+                "5d6caed14d945eb0"
+            ]
+        ]
+    },
+    {
+        "id": "5d6caed14d945eb0",
+        "type": "change",
+        "z": "c57426345ebbf1ea",
+        "name": "10 nm",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "10",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 283,
+        "wires": [
+            [
+                "e33a26f7b4df05be"
+            ]
+        ]
+    },
+    {
+        "id": "c1796babc508bb0e",
+        "type": "change",
+        "z": "c57426345ebbf1ea",
+        "name": "label1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "label1",
+                "tot": "str"
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 552,
+        "y": 375,
+        "wires": [
+            [
+                "e33a26f7b4df05be"
+            ]
+        ]
+    },
+    {
+        "id": "1479ca8e58daac21",
+        "type": "change",
+        "z": "c57426345ebbf1ea",
+        "name": "Label2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Label2",
+                "tot": "str"
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 555,
+        "y": 471,
+        "wires": [
+            [
+                "e33a26f7b4df05be"
+            ]
+        ]
+    },
+    {
+        "id": "0f9ef508c5e6ecec",
+        "type": "inject",
+        "z": "c57426345ebbf1ea",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 389,
+        "y": 375,
+        "wires": [
+            [
+                "c1796babc508bb0e"
+            ]
+        ]
+    },
+    {
+        "id": "3282ef7c781fa102",
+        "type": "inject",
+        "z": "c57426345ebbf1ea",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 407,
+        "y": 483,
+        "wires": [
+            [
+                "1479ca8e58daac21"
+            ]
+        ]
+    },
+    {
+        "id": "dabc442cb318aa64",
+        "type": "function",
+        "z": "7126bb814a444bb1",
+        "name": "Défini les caractéristiques \\n de la jauge",
+        "func": "var minimum = flow.get(\"Gauge-min\");\nvar maximum = flow.get(\"Gauge-max\");\n\nmsg.ui_control = {min:minimum, max:maximum}\nmsg.payload = 0\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 630,
+        "y": 220,
+        "wires": [
+            [
+                "8af4bc4054d4a473"
+            ]
+        ]
+    },
+    {
+        "id": "8af4bc4054d4a473",
+        "type": "ui_gauge",
+        "z": "7126bb814a444bb1",
+        "name": "",
+        "group": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "[V]",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 810,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "b9b223dfd2fa59f0",
+        "type": "ui_text_input",
+        "z": "7126bb814a444bb1",
+        "name": "",
+        "label": "Min Gauge value :",
+        "tooltip": "",
+        "group": "",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "x": 190,
+        "y": 200,
+        "wires": [
+            [
+                "384997768a7a89ae"
+            ]
+        ]
+    },
+    {
+        "id": "c80ced5ecfed804e",
+        "type": "ui_text_input",
+        "z": "7126bb814a444bb1",
+        "name": "",
+        "label": "Max Gauge value :",
+        "tooltip": "",
+        "group": "",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "",
+        "x": 190,
+        "y": 240,
+        "wires": [
+            [
+                "4734e7b60270fcfd"
+            ]
+        ]
+    },
+    {
+        "id": "384997768a7a89ae",
+        "type": "function",
+        "z": "7126bb814a444bb1",
+        "name": "Gauge-min",
+        "func": "flow.set(\"Gauge-min\",msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 390,
+        "y": 200,
+        "wires": [
+            [
+                "dabc442cb318aa64"
+            ]
+        ]
+    },
+    {
+        "id": "4734e7b60270fcfd",
+        "type": "function",
+        "z": "7126bb814a444bb1",
+        "name": "Gauge-max",
+        "func": "flow.set(\"Gauge-max\",msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 240,
+        "wires": [
+            [
+                "dabc442cb318aa64"
+            ]
+        ]
+    },
+    {
+        "id": "5555d9a244d21a83",
+        "type": "ui_slider",
+        "z": "7126bb814a444bb1",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "group": "",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "",
+        "topicType": "str",
+        "min": 0,
+        "max": "4000",
+        "step": 1,
+        "className": "",
+        "x": 610,
+        "y": 140,
+        "wires": [
+            [
+                "8af4bc4054d4a473"
+            ]
+        ]
+    },
+    {
+        "id": "932d7f66a9129faa",
+        "type": "function",
+        "z": "7126bb814a444bb1",
+        "name": "Get back value Gauge-min",
+        "func": "var flag1 = flow.get(\"Gauge-min\");\nmsg.payload = flag1;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 400,
+        "y": 340,
+        "wires": [
+            [
+                "eecbf09cc95dad76",
+                "b9b223dfd2fa59f0"
+            ]
+        ]
+    },
+    {
+        "id": "eecbf09cc95dad76",
+        "type": "debug",
+        "z": "7126bb814a444bb1",
+        "name": "min",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "a7ba6a685bbef630",
+        "type": "inject",
+        "z": "7126bb814a444bb1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 340,
+        "wires": [
+            [
+                "932d7f66a9129faa",
+                "0da109cbfb4ba422"
+            ]
+        ]
+    },
+    {
+        "id": "8739bf75c4b64269",
+        "type": "debug",
+        "z": "7126bb814a444bb1",
+        "name": "max",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "0da109cbfb4ba422",
+        "type": "function",
+        "z": "7126bb814a444bb1",
+        "name": "Get back value Gauge-max",
+        "func": "var flag2 = flow.get(\"Gauge-max\");\nmsg.payload = flag2;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 400,
+        "y": 380,
+        "wires": [
+            [
+                "8739bf75c4b64269",
+                "c80ced5ecfed804e"
+            ]
+        ]
+    },
+    {
+        "id": "5f0ce0f0531eb5b5",
+        "type": "inject",
+        "z": "7126bb814a444bb1",
+        "name": "Set to 0",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 460,
+        "y": 140,
+        "wires": [
+            [
+                "5555d9a244d21a83"
+            ]
+        ]
+    },
+    {
+        "id": "8c68a6e3.088f18",
+        "type": "inject",
+        "z": "f63cfb6e30a79501",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "THIS IS RED",
+        "payloadType": "str",
+        "x": 470,
+        "y": 380,
+        "wires": [
+            [
+                "600bcfcd.2d43c"
+            ]
+        ]
+    },
+    {
+        "id": "ef11ea8c.531b78",
+        "type": "inject",
+        "z": "f63cfb6e30a79501",
+        "name": "",
+        "props": [
+            {
+                "p": "payload",
+                "v": "THIS IS BLUE",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "THIS IS BLUE",
+        "payloadType": "str",
+        "x": 470,
+        "y": 330,
+        "wires": [
+            [
+                "f2a5f964.0f7a48"
+            ]
+        ]
+    },
+    {
+        "id": "f2a5f964.0f7a48",
+        "type": "ui_template",
+        "z": "f63cfb6e30a79501",
+        "group": "d6060f19.2b834",
+        "name": "Title",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "\n<div class=\"blocktitle blue\" >aaaaabbb</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 640,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "97a44e83.edc12",
+        "type": "ui_template",
+        "z": "f63cfb6e30a79501",
+        "group": "d6060f19.2b834",
+        "name": "Title CSS",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n  /* .blocktitle{\n        font-weight: bold;\n        background-color: inherit;\n        padding: 6px;\n        text-align: center;\n    }\n    .blocktitle.blue{\n        background-color: blue;\n        \n    }\n    .blocktitle.red{\n        background-color: red;\n    }*/\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "global",
+        "className": "",
+        "x": 650,
+        "y": 290,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "600bcfcd.2d43c",
+        "type": "ui_template",
+        "z": "f63cfb6e30a79501",
+        "group": "d6060f19.2b834",
+        "name": "Title",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "\n<div class=\"blocktitle red\" ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 640,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    }
+]
